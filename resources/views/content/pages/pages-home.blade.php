@@ -8,5 +8,11 @@ $configData = Helper::appClasses();
 
 @section('content')
 <h4>Home Page</h4>
-<h4>Cambios desde local</h4>
+<p>Este recurso es publico</p>
+@role('Admin')
+<p>Este recurso es del admin</p>
+@endrole
+@role('Escritor')
+<p>Este recurso es del escritor</p>
+@endrole
 @endsection
